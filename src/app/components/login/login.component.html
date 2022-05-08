@@ -1,16 +1,52 @@
+<section  style="
+height:666px;
+width: 1566px;
+margin-left:-200px;
+  background-image:url('../../../assets/images/chuttersnap-Zf64Osndqvc-unsplash.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+">
+<div style=" text-align: center;
+width: 550px;
+height:250px;
+display: block;
+position:absolute;
+left:400px;
+top:0;
+bottom:5px;
+margin:auto; background: rgba(255,255,255,0.5);
+backdrop-filter: blur(5px);" >
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" style="width: 500px ;margin:25px">
+    <div class="form-group">
+      <label >Name</label>
+      <input
+        type="text"
+        [(ngModel)]="model.username"
+        name="username"
+        class="form-control"
+      />
+    </div>
 
-  <form #f="ngForm" (ngSubmit)="onSubmit(f)" style="width:350px ">
-  <div class="form-group">
-    <label>Name</label>
-    <input type="text" [(ngModel)]="model.username" name="username" class="form-control">
-  </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input
+        type="password"
+        [(ngModel)]="model.password"
+        name="password"
+        class="form-control"
+      />
+    </div>
 
-  <div class="form-group">
-    <label>Password</label>
-    <input type="password"  [(ngModel)]="model.password" name="password"class="form-control">
-  </div>
-
-  <div class="form-group">
-    <button type="submit"  class="btn btn-danger btn-block">Submit</button>
-  </div>
-</form>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">
+        login <i class="fa fa-sign-in"></i>
+      </button>
+    </div>
+  </form>
+</div>
+</section>

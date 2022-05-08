@@ -9,11 +9,13 @@ import { Page404Component } from './components/page404/page404.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'books', component: ListComponent },
+
   { path: 'login', component: LoginComponent },
   { path: 'book/:id', component: DetailsComponent },
+  { path: 'home', component: HomeComponent,children: [
+
   { path: 'add', component: CreateComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'books', component: ListComponent }] },
   { path: '404', component: Page404Component }
 
 ];

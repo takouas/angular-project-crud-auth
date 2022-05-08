@@ -1,58 +1,39 @@
 <div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark"  >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #a2766e !important; ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item" routerLink="books" routerLinkActive="active">
+          <a routerLink="/books" class="nav-link" style="color:black !important"><b>Books</b></a>
+        </li>
+        <li class="nav-item" routerLink="add" routerLinkActive="active">
+          <a routerLink="/add" class="nav-link" style="color:black !important;"> <b>Add a Book</b></a>
+        </li>
 
 
-    <div class="navbar-nav mr-auto">
+      </ul>
+      <span class="navbar-text">
 
-      <li class="nav-item" routerLink="add" routerLinkActive="active">
-        <a href="/add" class="nav-link">Add a Book</a>
-      </li>
+        <span class="nav-item" routerLink="logout" routerLinkActive="active">
+          <a routerLink="/login" class="nav-link"
+            ><i class="fa fa-sign-out"   style="color:black !important;font-size:20px !important" aria-hidden="true"></i
+          ></a>
+        </span>
+      </span>
     </div>
   </nav>
 
   <div class="container mt-5">
-<router-outlet></router-outlet>
-<app-list></app-list>
+    <router-outlet></router-outlet>
   </div>
-  <footer class="bg-dark text-center text-lg-start " style="margin-top:150px">
-    <!-- Grid container -->
-    <div class="container p-4" style="color: beige!important;">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer text</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-            aliquam voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer text</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-            aliquam voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
+  <footer class="bg-dark text-center text-lg-start "  style=" margin-top: 150px;background-color: #a2766e !important;">
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="color:white;">
-      © 2022 Copyright:
-
-    </div>
+    <div class="text-center p-3" ><b>© 2022 Copyright:</b></div>
     <!-- Copyright -->
   </footer>
 </div>
-

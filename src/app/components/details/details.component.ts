@@ -57,11 +57,13 @@ export class DetailsComponent implements OnInit {
       .subscribe(
         response => {
           console.log(response);
-          this.message = 'The product was updated!';
+          this.message = 'The book was updated!';
+          alert('The book was updated!')
         },
         error => {
           console.log(error);
         });
+        window.location.href = '/home/books';
   }
 
   deleteBook(): void {

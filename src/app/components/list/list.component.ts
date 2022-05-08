@@ -41,6 +41,7 @@ export class ListComponent implements OnInit {
       error => {
         console.log(error);
       });
+      alert("Book deleted")
   }
 
   // Search items

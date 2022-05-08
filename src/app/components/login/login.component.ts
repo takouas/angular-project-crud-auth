@@ -24,10 +24,10 @@ export class LoginComponent implements OnInit {
     };
     if (data.username=="admin"&&data.password=="admin") {
 
-      window.location.href = '/home';
+      window.location.href = '/home/books';
 
     } else{
-      window.location.href = '/404';
+  alert("authentification failed")
 
     }
   }
